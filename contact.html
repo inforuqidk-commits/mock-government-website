@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Federal Government</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin: 30px 0;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .contact-form h3 {
+            color: #1a3a52;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 14px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-group button {
+            background-color: #1a3a52;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .form-group button:hover {
+            background-color: #0f2438;
+        }
+
+        .contact-info {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .contact-info h3 {
+            color: #1a3a52;
+            margin-bottom: 20px;
+        }
+
+        .info-item {
+            margin-bottom: 25px;
+        }
+
+        .info-item h4 {
+            color: #d4af37;
+            margin-bottom: 8px;
+        }
+
+        .info-item p {
+            color: #555;
+            margin: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo-section">
+                <div class="seal">🏛️</div>
+                <div class="header-text">
+                    <h1>Democratic Republic of Testland</h1>
+                    <p class="motto">Unity • Progress • Prosperity</p>
+                </div>
+            </div>
+            <div class="header-links">
+                <a href="#">EN</a> | <a href="#">ES</a>
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contact Us</h2>
+            <p style="text-align: center; margin-bottom: 30px;">Have questions? We're here to help. Reach out to us through any of the following methods.</p>
+
+            <div class="contact-container">
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <h4>📍 Address</h4>
+                        <p>Federal Government Building</p>
+                        <p>Central Plaza, Testland Capital</p>
+                        <p>TC-12345, Testland</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>📞 Phone</h4>
+                        <p>Main: +1 (555) 123-4567</p>
+                        <p>Support: +1 (555) 123-4568</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>📧 Email</h4>
+                        <p>info@testlandgov.com</p>
+                        <p>support@testlandgov.com</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>⏰ Office Hours</h4>
+                        <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                        <p>Saturday - Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Democratic Republic of Testland. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Accessibility</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
